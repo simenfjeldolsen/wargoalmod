@@ -1,0 +1,14 @@
+cb_gib_clay = {
+	valid_for_subject = no
+
+	prerequisites = {
+		NOT = {
+			truce_with = FROM
+		}
+		ai = no
+		is_rival = FROM
+		is_revolution_target = no
+	}
+
+	war_goal = gib_clay
+}

@@ -1,0 +1,24 @@
+gib_clay = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 1	
+	
+	attacker = {
+		allowed_provinces = {
+			NOT = {
+				controlled_by = owner
+			}
+		}
+		allowed_provinces_are_eligible = yes
+	}
+	defender = {
+		allowed_provinces = {
+			NOT = {
+				controlled_by = owner
+			}
+		}
+		allowed_provinces_are_eligible = yes
+	}
+}
