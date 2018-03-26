@@ -4,4 +4,4 @@ tags={
     "Multiplayer"
     "Balance"
 }
-supported_version="1.22.*.*"
+supported_version="1.25.*.*"
