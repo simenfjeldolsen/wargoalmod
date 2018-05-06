@@ -30,6 +30,20 @@ cb_restore_personal_union = {
 			government = monarchy
 			is_subject = no
 		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_personal_union
@@ -195,6 +209,20 @@ cb_trade_league_conflict = {
 	prerequisites = {
 		is_trade_league_leader = yes
 		can_justify_trade_conflict = FROM
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 	months = 24
 
@@ -250,6 +278,20 @@ cb_humiliate = {
 		}
 		is_neighbor_of = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = humiliate
@@ -262,6 +304,20 @@ cb_conquest = {
 	prerequisites = {
 		claim = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_claim
@@ -273,6 +329,20 @@ cb_core = {
 	prerequisites = {
 		core_claim = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_core
@@ -290,8 +360,23 @@ cb_independence_war = {
 		OR = {
 			NOT = { government = daimyo }
 			NOT = { from = { government = shogunate } }
+
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = defend_capital_independence
@@ -306,6 +391,20 @@ cb_colonial_independance_war = {
 		is_subject = yes
 		is_colonial_nation_of = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = defend_capital_independence
@@ -319,6 +418,20 @@ cb_nationalist = {
 		is_free_or_tributary_trigger = yes
 		culture_group_claim = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_province_nationalist
@@ -335,6 +448,20 @@ cb_imperial = {
 		}
 		is_free_or_tributary_trigger = yes
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_imperial
@@ -355,6 +482,20 @@ cb_daimyo_annex = {
 		government = daimyo
 		from = { government = shogunate }
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = annex_country
@@ -373,6 +514,20 @@ cb_independent_daimyo_annex = {
 		government = indep_daimyo
 		from = { government = shogunate }
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = annex_country
@@ -391,6 +546,20 @@ cb_shogun_annex = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = annex_country
@@ -409,6 +578,20 @@ cb_sengoku = {
 			is_subject = yes
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = annex_country
@@ -458,6 +641,20 @@ cb_revolutionary = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = war_goal_change_government_mutual
@@ -469,6 +666,20 @@ cb_colonial = {
 	prerequisites = {
 		colony_claim = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_colony
@@ -500,6 +711,20 @@ cb_crusade = {
 			cb_on_religious_enemies = yes
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_crusade
@@ -519,6 +744,20 @@ cb_defender_of_the_faith = {
 			hre_religion_treaty = no
 			capital_scope = { is_part_of_hre = no }
 			FROM = { capital_scope = { is_part_of_hre = no } }
+		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -541,6 +780,20 @@ cb_heretic = {
 			FROM = { capital_scope = { is_part_of_hre = no } }
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	allowed_provinces = {
@@ -579,6 +832,20 @@ cb_excommunication = {
 			FROM = { capital_scope = { is_part_of_hre = no } }
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_province_excommunication
@@ -600,6 +867,20 @@ cb_trade_war = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_trade_mutual
@@ -625,6 +906,20 @@ cb_trade_league_dispute = {
 		NOT = { ROOT = { trade_embargo_by = FROM } }
 		ROOT = { trade_league_embargoed_by = FROM }
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_trade_mutual
@@ -656,6 +951,20 @@ cb_imperial_ban = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_province_ban
@@ -673,6 +982,20 @@ cb_liberate_elector = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_liberation
@@ -704,6 +1027,20 @@ cb_claim_throne = {
 	prerequisites = {
 		succession_claim = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_throne
@@ -720,6 +1057,20 @@ cb_horde_vs_civ = {
 		}
 		is_nomad = yes
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_horde
@@ -736,6 +1087,20 @@ cb_tribal_feud = {
 		}
 		is_neighbor_of = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_province_tribal_feud
@@ -754,6 +1119,20 @@ cb_revoke_electorate = {
 		is_emperor = yes
 		NOT = { religion = FROM }
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = revoke_elector
@@ -789,6 +1168,20 @@ cb_privateers = {
 			}
 		}
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = blockade_ports
@@ -803,6 +1196,20 @@ cb_support_rebels = {
 		has_dlc = "Art of War"
 		has_spawned_supported_rebels = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_support_rebels
@@ -844,6 +1251,20 @@ cb_crush_the_revolution = {
 		FROM = {
 			is_revolution_target = yes
 		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_revolution
@@ -861,6 +1282,20 @@ cb_spread_the_revolution = {
 		FROM = {
 			NOT = { is_subject_of = ROOT }
 			NOT = { government = revolutionary_republic }
+		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -884,6 +1319,20 @@ cb_religious_league = {
 		hre_heretic_religion = ROOT
 		is_league_enemy = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_religious_league
@@ -902,6 +1351,20 @@ cb_flower_wars = {
 			NOT = { is_subject_of = ROOT }
 		}
 		is_neighbor_of = FROM
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_vassalize
@@ -921,6 +1384,20 @@ cb_maya_expansion = {
 			religion_group = pagan
 		}
 		is_neighbor_of = FROM
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_mayan
@@ -937,6 +1414,20 @@ cb_humiliate_rotw = {
 		ai = no
 		is_rival = FROM
 		is_revolution_target = no
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	attacker_disabled_po = {
@@ -991,6 +1482,20 @@ cb_chinese_unification = {
 			NOT = { has_country_modifier = the_mandate_of_heaven }
 		}
 		is_neighbor_of = FROM
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = superiority_chinese_unification
@@ -1009,6 +1514,20 @@ cb_take_mandate = {
 			religion_group = pagan
 			religion_group = eastern
 		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 
 	war_goal = take_capital_take_mandate
@@ -1026,6 +1545,20 @@ cb_force_migration = {
 		FROM = {
 			can_migrate = yes
 			is_free_or_tributary_trigger = yes
+		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
 		}
 	}
 	war_goal = force_migration
@@ -1050,6 +1583,20 @@ cb_force_tributary = {
 		is_emperor_of_china = yes
 		FROM = { is_subject = no }
 		is_neighbor_of = FROM
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+		}
 	}
 	
 	war_goal = take_capital_force_tributary
@@ -1065,6 +1612,20 @@ cb_hundred_years_union = {
 		OR = {
 			tag = ENG
 			tag = GBR
+		}
+		FROM = {
+			OR = {
+				AND = {
+					is_subject = no
+					ai = yes
+				}
+				AND = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
 		}
 	}
 
